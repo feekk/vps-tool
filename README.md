@@ -16,7 +16,7 @@ vps-tool is a collection pakcage of tools which contains the shadowsocks/anyconn
 
 bin folder contains the init and set-up sh file
 
-`init_iptable.sh` : init vps iptable rules so it could transfer our flow
+`init_iptable.sh` : init vps iptable rules so it could transfer our flow (<mark>use your real ip address replace 127.0.0.1 before execute </mark>)
 
 `ocserv_controller.sh`: ocserv controller script, accept params start,stop,restart
 
@@ -67,8 +67,7 @@ install sh scrpit will be here
     cd $HOME/vps-tool/bin
     sh ./init_iptables.sh
     #According to the script output content to carry out 
-    #vim /etc/sysctl.conf
-    #net.ipv4.ip_forward=1
+    #vim /etc/sysctl.conf    #net.ipv4.ip_forward=1
     #sysctl -p /etc/sysctl.conf
     
     cd $HOME/vps-tool/bin
