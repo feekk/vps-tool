@@ -2,7 +2,7 @@
 
 start(){
     echo "starting shadowsocks-server..."
-    nohup shadowsocks-server -c ../conf/shadowsocks.conf > /dev/null 2>&1 &
+    nohup shadowsocks-server -c ../conf/shadowsocks.conf.used > /dev/null 2>&1 &
     echo "started shadowsocks-server!!!"
 }
 stop(){
